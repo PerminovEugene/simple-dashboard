@@ -1,0 +1,24 @@
+@value colors: "../../public/css/colors.css";
+@value borderMainColor from colors;
+
+.list {
+    border: 1px solid borderMainColor;
+    padding: 10px;
+    max-width: 200px;
+    list-style: none;
+    overflow-y: auto;
+}
+.listItem {
+    padding: 5px;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+.listItem:not(.firstLetter):hover {
+    border-bottom: 1px solid borderMainColor;
+}
+.listItem.selected:not(.firstLetter) {
+    border: 1px solid borderMainColor;
+}
+.firstLetter {
+    font-weight: 800;
+}

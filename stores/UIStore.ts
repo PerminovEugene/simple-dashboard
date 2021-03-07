@@ -2,6 +2,7 @@ import { makeAutoObservable, observable } from "mobx"
 
 export class UIStore {
     isAddUserPopupVisible = false;
+    isEditUserPopupVisible = false;
 
     constructor() {
         makeAutoObservable(this);
@@ -13,5 +14,13 @@ export class UIStore {
 
     public hideAddUserPopup = () => {
         this.isAddUserPopupVisible = false;
+    }
+
+    public showEditUserPopup = () => {
+        this.isEditUserPopupVisible = true;
+    }
+
+    public hideEditUserPopup = () => {
+        this.isEditUserPopupVisible = false;
     }
 }

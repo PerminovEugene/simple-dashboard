@@ -1,0 +1,36 @@
+@value colors: "../../../public/css/colors.css";
+@value lightMainColor from colors;
+
+s.container {
+    padding: 10px;
+    margin: auto;
+    margin-top: 0;
+}
+.view {
+    display: flex;
+    flex-direction: column;
+    --header-width: 100px;
+}
+.viewContent {
+    display: flex;
+    flex-direction: row;
+}
+.header {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    height: var(--header-width);
+}
+.avatar {
+    width: var(--header-width);
+    height: var(--header-width);
+    line-height: var(--header-width);
+    background-color: lightMainColor;
+    border-radius: 100%;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+.body {
+
+}
