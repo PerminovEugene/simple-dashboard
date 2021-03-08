@@ -1,7 +1,7 @@
-import style from "./userView.module.css";
 import { User } from "../../../stores/UserStore";
 import Button from "../../../components/button";
 import Avatar from "../../../components/avatar";
+import styles from "./userView.module.css";
 
 interface UserViewProps {
   user: User;
@@ -10,31 +10,31 @@ interface UserViewProps {
 }
 
 const UserView = ({ user, showEditUserPopup, deleteUser }: UserViewProps) => (
-  <div className={style.container}>
+  <div className={styles.container}>
     {user && (
-      <div className={style.view}>
-        <div className={style.viewContent}>
+      <div className={styles.view}>
+        <div className={styles.viewContent}>
           <Avatar text={`${user.firstName[0]}${user.lastName[0]}`} />
-          <div className={style.profile}>
-            <div className={style.header}>
+          <div className={styles.profile}>
+            <div className={styles.header}>
               <div>{user.firstName}</div>
               <div>{user.middleName}</div>
               <div>{user.lastName}</div>
             </div>
-            <div className={style.body}>
-              <div className={style.bodyItem}>
+            <div className={styles.body}>
+              <div className={styles.bodyItem}>
                 <div>Email</div>
                 <div>{user.email}</div>
               </div>
-              <div className={style.bodyItem}>
+              <div className={styles.bodyItem}>
                 <div>Group</div>
                 <div>{user.group}</div>
               </div>
             </div>
           </div>
         </div>
-        <div className={style.actionsPanel}>
-          <div className={style.leftButtons}>
+        <div className={styles.actionsPanel}>
+          <div className={styles.leftButtons}>
             <Button onClick={() => alert("Is not implemented")} text="Share" />
             <Button onClick={showEditUserPopup} text="Edit" />
           </div>
