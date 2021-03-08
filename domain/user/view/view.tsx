@@ -42,7 +42,7 @@ const UserView = ({ user, showEditUserPopup, deleteUser }: UserViewProps) => (
         </div>
       </div>
     )}
-    {!user && <div>User is not choosen</div>}
+    {!user && <div>User is not chosen</div>}
   </div>
 );
 export default UserView;
