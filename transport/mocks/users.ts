@@ -1,0 +1,105 @@
+export const users = [{
+    firstName: 'Brandy',
+    middleName: 'John',
+    lastName: 'Sena',
+    group: 'work',
+    email: 'secretEmail-1@gmail.com',
+    id: 1,
+    showNotification: false
+}, {
+    firstName: 'Briana',
+    middleName: 'Janna',
+    lastName: 'Boucher',
+    group: 'work',
+    email: 'secretEmail-2@gmail.com',
+    id: 2,
+    showNotification: false
+}, {
+    firstName: 'Branda',
+    middleName: 'Anna',
+    lastName: 'Wallace',
+    group: 'work',
+    email: 'secretEmail-3@gmail.com',
+    id: 3,
+    showNotification: false
+}, {
+    firstName: 'Arthur',
+    middleName: 'John',
+    lastName: 'Witt',
+    group: 'work',
+    email: 'secretEmail-4@gmail.com',
+    id: 4,
+    showNotification: false
+}, {
+    firstName: 'Arthur',
+    middleName: 'John',
+    lastName: 'Witt',
+    group: 'work',
+    email: 'secretEmail-5@gmail.com',
+    id: 5,
+    showNotification: false
+}, {
+    firstName: 'Camelia',
+    middleName: 'Dorian',
+    lastName: 'Garett',
+    group: 'friends',
+    email: 'secretEmail-6@gmail.com',
+    id: 6,
+    showNotification: false
+}, {
+    firstName: 'Antonio',
+    middleName: 'Bruno',
+    lastName: 'Elam',
+    group: 'work',
+    email: 'secretEmail-7@gmail.com',
+    id: 7,
+    showNotification: false
+}, {
+    firstName: 'Catherine',
+    middleName: 'Red',
+    lastName: 'Todd',
+    group: 'work',
+    email: 'secretEmail-8@gmail.com',
+    id: 8,
+    showNotification: false
+}, {
+    firstName: 'Don',
+    middleName: 'Key',
+    lastName: 'Wagner',
+    group: 'work',
+    email: 'secretEmail-9@gmail.com',
+    id: 9,
+    showNotification: false
+}, {
+    firstName: 'Christopher',
+    middleName: 'Lee',
+    lastName: 'Gant',
+    group: 'work',
+    email: 'secretEmail-10@gmail.com',
+    id: 10,
+    showNotification: false
+}, {
+    firstName: 'Donald',
+    middleName: 'Dorian',
+    lastName: 'Everett',
+    group: 'work',
+    email: 'secretEmail-11@gmail.com',
+    id: 11,
+    showNotification: false
+}, {
+    firstName: 'Maria',
+    middleName: 'Elis',
+    lastName: 'Garet',
+    group: 'work',
+    email: 'secretEmail-12@gmail.com',
+    id: 12,
+    showNotification: false
+}, {
+    firstName: 'Mario',
+    middleName: 'El',
+    lastName: 'Pasito',
+    group: 'work',
+    email: 'secretEmail-13@gmail.com',
+    id: 13,
+    showNotification: false
+}];

@@ -1,0 +1,9 @@
+.navigation {
+  width: 21%;
+  min-width: 160px;
+}
+.addButton {
+  width: 100%;
+  background-color: transparent;
+  border-radius: 4px;
+}

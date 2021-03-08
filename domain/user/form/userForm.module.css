@@ -1,0 +1,59 @@
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+}
+.formHeader {
+  display: flex;
+  flex-direction: row;
+  padding: 15px 20px;
+}
+.formHeader div:first-child {
+  text-align: left;
+  width: 50%;
+}
+.formHeader div:last-child {
+  text-align: right;
+  width: 50%;
+}
+.formBody {
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.formBody form {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.formBody .avatar {
+  width: 50px;
+}
+.formBody form div:not(:last-child) {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+.formBody form div label {
+  padding-bottom: 2px;
+  font-weight: 700;
+}
+.formBody form div.inlineInputBlock {
+  flex-direction: row;
+}
+.formBody form div.inlineInputBlock label {
+  font-weight: 400;
+}
+.submit {
+  border-radius: 5px;
+  border: 1px solid grey;
+  width: 100px;
+  margin-top: 10px;
+  background-color: transparent;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
