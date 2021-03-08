@@ -5,7 +5,7 @@ import AlphabeticalList from "../components/alphabeticalList";
 import Popup from "../components/popup/popup";
 import AddUserForm from "../domain/user/form";
 import PageLayout from "../layout/pageLayout";
-import UserView from "../domain/user/view";
+import UserView from "../domain/user/view/userView";
 import UserListItem from "../domain/user/listItem";
 import Search from "../components/search";
 import styles from "./dashboard.module.css";
