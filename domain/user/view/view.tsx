@@ -1,7 +1,7 @@
 import { User } from "../../../stores/UserStore";
 import Button from "../../../components/button";
 import Avatar from "../../../components/avatar";
-import styles from "./userView.module.css";
+import styles from "./view.module.css";
 
 interface UserViewProps {
   user: User;
