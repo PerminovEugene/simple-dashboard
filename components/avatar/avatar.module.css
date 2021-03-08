@@ -1,0 +1,17 @@
+@value colors: "../../public/css/colors.css";
+@value lightMainColor from colors;
+
+.avatar {
+  --size: 100px;
+  width: var(--size);
+  height: var(--size);
+  line-height: var(--size);
+  background-color: lightMainColor;
+  border-radius: 100%;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  font-weight: 100;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  letter-spacing: 0;
+}

@@ -1,0 +1,9 @@
+@value colors: "../../public/css/colors.css";
+@value borderMainColor from colors;
+
+.search {
+  width: calc(100% - 23px);
+  margin: 0;
+  padding: 5px 10px;
+  border-width: 2px;
+}

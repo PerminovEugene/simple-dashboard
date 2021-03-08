@@ -2,23 +2,25 @@
 @value borderMainColor from colors;
 
 .list {
-    border: 1px solid borderMainColor;
-    padding: 10px;
-    max-width: 200px;
-    list-style: none;
-    overflow-y: auto;
+  border: 1px solid borderMainColor;
+  padding: 10px;
+  list-style: none;
+  overflow-y: auto;
+  max-height: 427px;
+  margin-bottom: 3px;
+  margin-top: 3px;
 }
 .listItem {
-    padding: 5px;
-    cursor: pointer;
-    border: 1px solid transparent;
+  padding: 5px;
+  cursor: pointer;
+  border: 1px solid transparent;
 }
 .listItem:not(.firstLetter):hover {
-    border-bottom: 1px solid borderMainColor;
+  border-bottom: 1px solid borderMainColor;
 }
 .listItem.selected:not(.firstLetter) {
-    border: 1px solid borderMainColor;
+  border: 1px solid borderMainColor;
 }
 .firstLetter {
-    font-weight: 800;
+  font-weight: 800;
 }

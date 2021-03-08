@@ -12,3 +12,10 @@ export const sendGetRequest = async (url: string) => {
     await wait(); // Imitate request to the server
     return urlToDataMocksMap[url];
 }
+
+let newId = 1000; // Dummy mock for no backend implementation
+export const sendPostRequest = async (url: string, data: any) => {
+    await wait(); // Imitate request to the server
+    data.id = newId++;
+    return data;
+}

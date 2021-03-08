@@ -1,5 +1,5 @@
 import { makeAutoObservable } from 'mobx';
-import { sendGetRequest } from '../transport/request';
+import { sendGetRequest, sendPostRequest } from '../transport/request';
 
 export interface User {
     firstName: string;
@@ -40,7 +40,8 @@ export class UserStore implements IUserStore {
         this.filteredUsers = this.users;
     }
 
-    public addUser = async (user: User) => {
+    public addUser = async (newUser: User) => {
+        const user = await sendPostRequest('user', newUser);
         this.users.push(user);
         this.sortUsers();
         this.applyFilter(this.filter);
@@ -95,13 +96,13 @@ export class UserStore implements IUserStore {
     private sortUsers() {
         this.users = this.users.sort((user1, user2) => {
             let result = false;
-            if (user1.firstName === user2.firstName) {
-                if (user1.middleName![0] === user2.middleName![0]) {
-                    result = user1.lastName < user2.lastName;
+            if (user1.firstName.toLowerCase() === user2.firstName.toLowerCase()) {
+                if (user1.middleName![0].toLowerCase() === user2.middleName![0].toLowerCase()) {
+                    result = user1.lastName.toLowerCase() < user2.lastName.toLowerCase();
                 }
-                result = user1.middleName[0] < user2.middleName[0];
+                result = user1.middleName[0].toLowerCase() < user2.middleName[0].toLowerCase();
             }
-            result = user1.firstName < user2.firstName
+            result = user1.firstName.toLowerCase() < user2.firstName.toLowerCase()
             return result ? -1 : 1;
         });
     }

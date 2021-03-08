@@ -1,12 +1,15 @@
 @value colors: "../public/css/colors.css";
 @value borderMainColor from colors;
+@value hardMainColor from colors;
 
 .container {
-    margin: auto;
-    max-width: 900px;
-    min-width: 600px;
-    border: 1px solid borderMainColor;
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
+  color: hardMainColor;
+  margin: auto;
+  max-width: 900px;
+  min-width: 400px;
+  max-height: 500px;
+  border: 1px solid borderMainColor;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
 }
